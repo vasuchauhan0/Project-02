@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-fullstack",
+  "version": "1.0.0",
+  "description": "Complete Full-Stack Portfolio Application with React + Node.js + MongoDB",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "seed": "cd backend && npm run seed",
+    "test:backend": "cd backend && npm start",
+    "test:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Vasu Chauhan",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
